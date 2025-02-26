@@ -12,7 +12,7 @@ public class ClientMono : MonoBehaviour
 
     private void Awake()
     {
-        _clientHttpFacade = new ClientHttpFacade("http://localhost:3000");
+        _clientHttpFacade = new ClientHttpFacade("https://backend.superothello.peryloth.com");
     }
 
     public async UniTask CreateGame()

@@ -28,7 +28,7 @@ public class ClientHttpFacade
         {
             string json = request.downloadHandler.text;
             Debug.Log($"CreateGameResponse: {json}");
-            
+
             return JsonHelper.Deserialize<CreateGameResponse>(json);
         }
     }

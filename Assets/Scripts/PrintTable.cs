@@ -18,7 +18,7 @@ public class PrintTable : MonoBehaviour
 
     public void GenerateBoard(int[][] board)
     {
-        Debug.Log($"Generando tablero... {board}");
+        Debug.Log($"Generando tablero...");
         if (board == null || board.Length == 0)
         {
             Debug.LogError("El tablero es nulo o vacío.");

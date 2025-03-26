@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 public class BaseResponse
 {
@@ -19,12 +20,12 @@ public class CreateGameResponse
 [Serializable]
 public class GetGameResponse
 {
-    public int id;
-    public int[][] board;
-    public string currentPlayer;
-    public string status;
-    public string createdAt;
-    public string updatedAt;
+    public int id { get; set; }
+    public int[][] board { get; set; }
+    public string currentPlayer { get; set; }
+    public string status { get; set; }
+    public DateTime createdAt { get; set; }
+    public DateTime updatedAt { get; set; }
 }
 
 [Serializable]
